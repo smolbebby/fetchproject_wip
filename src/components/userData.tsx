@@ -36,6 +36,10 @@ export default function users() {
     getAverage([users]);
     console.log(getAverage);
 
+    const brownHair = [users];
+    /**brownHair.filter(user => user.hair === "Brown") */
+    brownHair.filter(u => u.hair.includes("Brown"));
+    
     if (isLoading) {
         return <div>Loading...</div>
     }
